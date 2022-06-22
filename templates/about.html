@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{%block content%}
+    <main>
+      <div class="container-fluid my-5 text-center">
+          <h1 class="display-2 mb-3">Informações sobre o experimento</h1>
+            <div class="row justify-content-md-center m-3">
+                <h2> Funcionamento Geral</h2>
+                <div class="col-12 col-xl-6 mt-5">
+                    <p class="border border-warning p-3 rounded-3 my-5">
+
+                           Os dados de temperatura e umidade relativa do ar são medidos pelos sensor DHT11
+                        ao passo que os indicadores de qualidade do ar são medidos pelo sensor
+                        MQ-135. Estes dados são processados através do Arduino Uno Rev 2
+                        e são enviados para um servidor de internet das coisas. Por fim os dados são mostrados aqui no site.</p>
+                </div>
+
+                    <div class="col-12 col-xl-6 mt-5">
+                    <img  class="img-fluid p-5" src="static/circuito.png">
+                </div>
+               </div>
+
+          </div>
+
+
+        </main>
+{%endblock%}

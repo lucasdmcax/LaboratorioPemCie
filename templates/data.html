@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{%block content%}
+<main>
+    <div class="container-fluid  text-center m-3">
+        <div class="row">
+    {% if content == "alemanha" %}
+            <h1 class="display my-5"> Dados da Alemanha </h1>
+            <div class="col m-3">
+                <h2> Temperatura </h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1567731/widgets/485017"></iframe>
+            </div>
+            <div class="col m-3">
+                <h2> Umidade Relativa do Ar </h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1567731/widgets/485036"></iframe>
+            </div>
+            <div class="col m-3">
+                <h2> Qualidade do Ar </h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1567731/widgets/485038"></iframe>
+            </div>
+    {% elif content == "brasil" %}
+            <h1 class="display my-5"> Dados do Brasil </h1>
+            <div class="col m-3">
+                <h2> Temperatura </h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1567721/widgets/485041"></iframe>
+            </div>
+            <div class="col m-3">
+                <h2> Umidade Relativa do Ar </h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1567721/widgets/485042"></iframe>
+            </div>
+            <div class="col m-3">
+                <h2> Qualidade do Ar </h2>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1567721/widgets/485043"></iframe>
+            </div>
+    {%endif%}
+            </div>
+    </div>
+</main>
+{%endblock%}
